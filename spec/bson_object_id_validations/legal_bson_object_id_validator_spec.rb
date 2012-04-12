@@ -25,7 +25,7 @@ describe BsonObjectIdValidations::LegalBsonObjectIdValidator  do
 
   describe '#validate_each' do # {{{
     let(:user) do
-      User.new :mongo_id_1 => 'invalid', :mongo_id_2 => 'invalid'
+      User.new :mongo_id_1 => 'invalid'
     end
 
     context 'when the attribute contains an invalid value' do # {{{
@@ -40,6 +40,10 @@ describe BsonObjectIdValidations::LegalBsonObjectIdValidator  do
       end
 
       context 'when a custom error message is provided' do # {{{
+        let(:user) do
+          User.new :mongo_id_2 => 'invalid'
+        end
+
         it 'uses the custom error message' do
           user.valid?
           user.errors[:mongo_id_2].should == ['a custom error message']
