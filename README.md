@@ -3,7 +3,7 @@
 Provides an ActiveModel validation that checks if an attribute represents a legal BSON::ObjectId .
 
 
-# Installation
+## Installation
 
 Add this line to your application's Gemfile:
 
@@ -18,7 +18,7 @@ Or install it yourself as:
     $ gem install bson_object_id_validations
 
 
-# Usage
+## Usage
 
 Validate that the specified attribute's value is a legal BSON::ObjectId .
 
@@ -46,10 +46,10 @@ user.valid?
 ```
 
 
-# Contributing
+## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to your branch (`git push origin my-new-feature`)
-5. Send a pull request
+1. Fork it.
+2. Create your feature branch (`git checkout -b my-new-feature`).
+3. Commit your changes (`git commit -am 'Added some feature'`).
+4. Push to your branch (`git push origin my-new-feature`).
+5. Send a pull request.
