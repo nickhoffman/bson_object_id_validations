@@ -4,8 +4,8 @@ require File.expand_path('../lib/bson_object_id_validations/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Nick Hoffman"]
   gem.email         = ["nick@deadorange.com"]
-  gem.description   = %q{An ActiveModel validation that checks if an attribute represents a legal BSON::ObjectId .}
-  gem.summary       = %q{An ActiveModel validation that checks if an attribute represents a legal BSON::ObjectId .}
+  gem.description   = %q{Provides an ActiveModel validation that checks if an attribute represents a legal BSON::ObjectId .}
+  gem.summary       = %q{Provides an ActiveModel validation that checks if an attribute represents a legal BSON::ObjectId .}
   gem.homepage      = "https://github.com/nickhoffman/bson_object_id_validations"
 
   gem.files         = `git ls-files`.split($\)
