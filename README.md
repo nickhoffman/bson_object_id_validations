@@ -25,6 +25,7 @@ Validate that the specified attribute's value is a legal BSON::ObjectId .
 ```ruby
 class User
   include ActiveModel::Validations
+  include BsonObjectIdValidations
 
   attr_accessor :mongo_id
 
