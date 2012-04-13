@@ -19,7 +19,7 @@ describe BsonObjectIdValidations::LegalBsonObjectIdValidator  do
   describe 'class variables' do # {{{
     it 'has @@error_message' do
       described_class.class_variable_get(:@@error_message).
-        should == 'is an invalid BSON::ObjectId'
+        should == 'is not a legal BSON::ObjectId'
     end
   end # }}}
 
@@ -36,7 +36,7 @@ describe BsonObjectIdValidations::LegalBsonObjectIdValidator  do
 
       it 'uses the standard error message' do
         user.valid?
-        user.errors[:mongo_id_1].should == ['is an invalid BSON::ObjectId']
+        user.errors[:mongo_id_1].should == ['is not a legal BSON::ObjectId']
       end
 
       context 'when a custom error message is provided' do # {{{

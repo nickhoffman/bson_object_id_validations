@@ -1,6 +1,6 @@
 module BsonObjectIdValidations
   class LegalBsonObjectIdValidator < ActiveModel::EachValidator
-    @@error_message = 'is an invalid BSON::ObjectId'
+    @@error_message = 'is not a legal BSON::ObjectId'
 
     # Validate that the specified attribute's value is a legal BSON::ObjectId .
     #
